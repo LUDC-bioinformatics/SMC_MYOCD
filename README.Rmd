@@ -4,13 +4,16 @@ author:
    name: "Dmytro Kryvokhyzha"
    email: dmytro.kryvokhyzha@med.lu.se
    affiliation: LUDC Bioinformatics Unit
-date: "23 september, 2021"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
     keep_md: true
 ---
 
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, eval=FALSE)
+knitr::opts_knit$set(root.dir = '../')
+```
 
 ## Publication
 
@@ -46,8 +49,7 @@ The raw data of this project is stored at LUDC and will be made available upon r
 Install [Conda](https://conda.io) and load the pre-configured conda
 environment. It should also install all the required programs.
 
-
-```bash
+```{bash}
 conda env create -f conf/conda.yml
 conda activate myocardin
 ```
@@ -67,8 +69,7 @@ Reads counting is performed with [featureCounts](http://bioinf.wehi.edu.au/featu
 
 See the rules in `code/Snakefile`.
 
-
-```bash
+```{bash}
 snakemake -s code/Snakefile -p --use-conda
 ```
 
@@ -80,8 +81,7 @@ Results:
 
 Performed with [DESeq2](https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html):
 
-
-```bash
+```{bash}
 R -e 'rmarkdown::render("code/DESeq.Rmd", output_dir="results/reports/")'
 ```
 
