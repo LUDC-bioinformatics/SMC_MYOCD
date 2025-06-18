@@ -10,11 +10,9 @@ output:
     keep_md: true
 ---
 
-
-
 ## Publication
 
-Liu Li, Catarina Rippe, Ola Hansson, Dmytro Kryvokhyzha, Steven Fisher, Mari Ekman, and Karl Swärd. "[Regulation of the Muscarinic M3 Receptor by Myocardin-Related Transcription Factors](https://dx.doi.org/10.3389%2Ffphys.2021.710968)" _Frontiers in Physiology 12_ (2021).
+[Li et al. 2021. **Regulation of the Muscarinic M3 Receptor by Myocardin-Related Transcription Factors**. _Frontiers in Physiology 12_](https://doi.org/10.3389/fphys.2021.710968)
 
 ## PI
 
